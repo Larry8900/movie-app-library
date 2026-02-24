@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie library app</title>
+    <link rel="stylesheet" href="./styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
+        rel="stylesheet">
+</head>
+<body>
+   
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">CV</div>
+
+    <div class="nav-item active" title="Home">🏠</div>
+    <div class="nav-item" title="Search">🔍</div>
+    <div class="nav-item" title="Watchlist">🔖</div>
+    <div class="nav-item" title="TV Shows">📺</div>
+    <div class="nav-item" title="Movies">🎬</div>
+    <div class="nav-item" title="Cart">🛒</div>
+
+    <div class="sidebar-bottom">
+      <div class="nav-item" title="Settings">⚙️</div>
+      <div class="avatar">L</div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <div class="topbar">
+      <div class="topbar-tabs">
+        <div class="tab active">All</div>
+        <div class="tab">Movies</div>
+        <div class="tab">TV Shows</div>
+        <div class="tab">Anime</div>
+      </div>
+      <div class="topbar-right">
+        <div class="search-bar">
+          <span>🔍</span>
+          <input type="text" id="search-input" placeholder="Search titles..."/>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-side-fade"></div>
+      <div class="hero-content">
+        <div class="hero-badge">⭐ Featured Tonight</div>
+        <h1 class="hero-title">The Dark<br>Forest</h1>
+        <div class="hero-tags">
+          <span class="tag">Horror</span>
+          <span class="tag">Thriller</span>
+          <span class="tag">Mystery</span>
+        </div>
+        <div class="hero-meta">
+          <span class="rating">★ 8.4</span>
+          <span class="dot"></span>
+          <span>2024</span>
+          <span class="dot"></span>
+          <span>2h 14m</span>
+          <span class="dot"></span>
+          <span>18+</span>
+        </div>
+        <p class="hero-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Iusto illo dolor deserunt nam assumenda ipsa eligendi dolore,
+          ipsum id fugiat quo enim impedit, laboriosam omnis minima
+          voluptatibus incidunt. Accusamus, provident.
+        </p>
+        <div class="hero-actions">
+          <button class="btn-watch">▶ &nbsp;WATCH</button>
+          <button class="btn-info">ℹ More Info</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEW RELEASES — JS will fill this div with cards -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-title">New Releases</div>
+        <a class="see-all" href="#">See all →</a>
+      </div>
+      <div class="movie-grid" id="new-releases-grid"></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- TRENDING — horizontal scroll row -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-title">Trending Now</div>
+        <a class="see-all" href="#">See all →</a>
+      </div>
+      <div class="scroll-row" id="trending-row"></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- EDITOR'S PICKS — landscape featured cards -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-title">Editor's Picks</div>
+        <a class="see-all" href="#">See all →</a>
+      </div>
+      <div class="featured-grid" id="editors-grid"></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- MORE RELEASES -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-title">New Releases</div>
+        <a class="see-all" href="#">See all →</a>
+      </div>
+      <div class="movie-grid" id="more-releases-grid"></div>
+    </div>
+
+  </main>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
