@@ -3,14 +3,18 @@
 🎬 Movie Library App
 A simple movie library web app built with HTML, CSS, and vanilla JavaScript. It fetches real movie data from the OMDB API and lets you search, preview, and watch trailers.
 
+Live Site: https://movie-app-library-silk.vercel.app/
+
+Github Repo: https://github.com/Larry8900/movie-app-library.git
+
 Features
 
 🔍 Search any movie by title
-🎥 Hero banner previews the searched movie with poster, plot, and rating
-📋 New Releases, Trending, and Editor's Picks grids auto-loaded on startup
+🎥 Hero banner previews the searched movie with poster, plot, and rating.
+📋 New Releases, Trending, and Editor's Picks grids auto-loaded on startup.
 🪟 Click any card to open a full detail modal
-▶️ Watch Trailer button (opens YouTube search or embeds inline with a YouTube API key)
-🏷️ Filter by genre using the top tabs (Popular, Action, Comedy, Horror)
+▶️ Watch Trailer button (opens YouTube search or embeds inline with a YouTube API key).
+🏷️ Filter by genre using the top tabs (Popular, Action, Comedy, Horror).
 
 
 Project Structure
